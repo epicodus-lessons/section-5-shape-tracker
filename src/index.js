@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Triangle from './triangle.js';
 
-function handleTriangleForm() {
+function handleTriangleForm(event) {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
   const length2 = parseInt(document.querySelector('#length2').value);
