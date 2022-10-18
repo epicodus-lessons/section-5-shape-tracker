@@ -4,7 +4,7 @@ import './css/styles.css';
 import Triangle from './js/triangle.js';
 import Rectangle from './js/rectangle.js';
 
-function handleTriangleForm() {
+function handleTriangleForm(event) {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
   const length1 = parseInt(document.querySelector('#length1').value);
@@ -17,7 +17,7 @@ function handleTriangleForm() {
   document.querySelector('#response').append(pTag);
 }
 
-function handleRectangleForm() {
+function handleRectangleForm(event) {
   event.preventDefault();
   document.querySelector('#response2').innerText = null;
   const length1 = parseInt(document.querySelector('#rect-length1').value);
